@@ -2779,7 +2779,7 @@
       position: absolute;
       top: 17%;
       font-size: 38%;
-      margin-left: 30%;
+      margin-left: 25%;
       color: white;
     }
   
@@ -2787,7 +2787,7 @@
       position: absolute;
       font-size: 90%;
       font-weight: bold;
-      margin-left: 35%;
+      margin-left: 30%;
       color: white;
     }
   
@@ -2814,7 +2814,7 @@
     }
   
     #shop_now_btn {
-      margin-left: 36%;
+      margin-left: 30%;
       width: 25%;
       height: 5%;
       font-size: 90%;
