@@ -2777,9 +2777,9 @@
   
     #shop_now_title {
       position: absolute;
-      top: 24%;
+      top: 17%;
       font-size: 38%;
-      margin-left: 16.8%;
+      margin-left: 18.8%;
       color: white;
     }
   
@@ -2787,14 +2787,14 @@
       position: absolute;
       font-size: 90%;
       font-weight: bold;
-      margin-left: 36%;
+      margin-left: 38%;
       color: white;
     }
   
   
     #shop_now_left_btn {
       position: absolute;
-      top: 28%;
+      top: 19%;
       margin-left: 5%;
       width: 50px;
       height: 50px;
@@ -2805,7 +2805,7 @@
   
     #shop_now_right_btn {
       position: absolute;
-      top: 28%;
+      top: 19%;
       margin-left: 80%;
       width: 50px;
       height: 50px;
@@ -2839,7 +2839,7 @@
     }
   
     .brands_img {
-      gap: 12px;
+      gap: 14.5px;
       font-family: 'Poppins', sans-serif;
   
     }
