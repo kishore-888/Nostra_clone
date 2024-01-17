@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@800&family=Poppins:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Tailwind CSS CDN link-->
+    <link href="
+  https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+  " rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="responsive_fonts" id="home">
+    <div class="offer_container">
+        <p id="offer_title">Sign Up and <span class="bold-word" style="font-family: 'Poppins'">GET 20% OFF</span> for
+            your
+            first Order</p>
+        <svg id="offer_close_btn" onclick="toggle()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+
+    </div>
+
+
+    <script>
+        // Function to bold specific words in a paragraph
+        function boldWords(offer_title, wordsToBold) {
+            var offer_title = document.getElementById(offer_title);
+            var content = offer_title.innerHTML;
+
+            wordsToBold.forEach(function (word) {
+                var regex = new RegExp("\\b" + word + "\\b", "gi");
+                content = content.replace(regex, '<span class="bold-word">' + word + '</span>');
+            });
+
+            offer_title.innerHTML = content;
+        }
+
+        // Call the function with the offer_title ID and an array of words to bold
+        boldWords('offer_title', ['GET 20% OFF']);
+
+        function toggle() {
+            var offer_container = document.querySelector(".offer_container")
+
+            if (offer_container.style.display === "none") {
+                offer_container.style.display = "block"
+            }
+            else {
+                offer_container.style.display = "none"
+            }
+        }
+    </script>
+    <nav class="bg-white p-3 mt-2 ml-2 mr-0 flex items-center justify-between sticky top-0 z-10">
+        <h1 class="text-2xl" style="font-family: 'Poppins', sans-serif; font-weight: bold;">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-20 text-gray-800 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;"
+                    href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;"
+                    href="index.html">New Arrival</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;"
+                    href="index.html">Most Wanted</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;"
+                    href="collections.html">Collections</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;"
+                    href="contactus.html">Contact
+                    Us</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="side_navbar" class="bg-black fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height:100vh; left: -50%;">
+        <div class="text-right p-5">
+            <p id="close_nav" class="inline cursor-pointer text-gray-200">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+                    href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+                    href="index.html">New Arrivals</a>
+            </li>
+
+            <li>
+                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+                    href="index.html">Most
+                    Wanted</a>
+            </li>
+
+            <li>
+                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+                    href="collections.html">Collections</a>
+            </li>
+
+            <li>
+                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+                    href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+        </nav>
+    </section>
+    <section class="text-center">
+        <input id="search" type="text" class="border border-black p-2 m-3" style="width: 80%;" placeholder="Search...">
+    </section>
+    <section class="collections p-4 text-center">
+        <section id="collections_container" class="grid grid-cols-3  md:grid-cols-3 mt-5 gap-20">
+            <div id="cl-1" class="cli">
+                <img class="cl1" src="./images/c1.jpg"
+                    alt="image1">
+                <h3>Floral Summer Shirt</h3>
+                <p>₹220</p>
+            </div>
+            <div id="cl-2" class="cli">
+                <img class="cl2" src="./images/c2.jpg"
+                    alt="image2">
+                <h3>Summer Green</h3>
+                <p> ₹260</p>
+            </div>
+            <div id="cl-3" class="cli">
+                <img class="cl3" src="./images/c3.jpg"
+                    alt="image3">
+                <h3>Party Floral Shirt</h3>
+                <p>₹399</p>
+            </div>
+            <div id="cl-4" class="cli">
+                <img class="cl4" src="./images/c4.jpg"
+                    alt="image4">
+                <h3>Floral Summer Shirt</h3>
+                <p>₹399</p>
+            </div>
+            <div id="cl-5" class="cli">
+                <img class="cl5" src="./images/c5.jpg"
+                    alt="image5">
+                <h3>Beach Shirt</h3>
+                <p>₹579</p>
+            </div>
+            <div id="cl-6" class="cli">
+                <img class="cl6" src="./images/c6.jpg"
+                    alt="image6">
+                <h3>Shirt Party Red</h3>
+                <p>₹579</p>
+            </div>
+            <div id="cl-7" class="cli">
+                <img class="cl7" src="./images/c4.jpg"
+                    alt="image7">
+                <h3>Floral Summer Shirt</h3>
+                <p>₹399</p>
+            </div>
+            <div id="cl-8" class="cli">
+                <img class="cl8" src="./images/c2.jpg"
+                    alt="image8">
+                <h3>Summer Green</h3>
+                <p> ₹260</p>
+            </div>
+            <div id="cl-9" class="cli">
+                <img class="cl9" src="./images/c3.jpg"
+                    alt="image9">
+                <h3>Party Floral Shirt</h3>
+                <p>₹399</p>
+            </div>
+        </section>
+    </section>
+
+    <section class="Newsletter text-center">
+        <h1 class="text-center">Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates and more</p>
+        <input type="text" class="i_b border" style="width: 80%;">
+        <br>
+        <button>Subscribe<svg style="margin-left: 40%; color: #E2E1E1;" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg></button>
+    </section>
+    </section>
+
+    <section class="footer p-10 text-left flex flex-col gap-5">
+        <h1>Nostra</h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="flex gap-10"><img src="./images/instagram.png"><img src="./images/twitter.png"><img
+                src="./images/facebook.png"></div>
+        <p>@ 2023 Nostra.com</p>
+    </section>
+    <script src="collections.js"></script>
+</body>
+
+</html>

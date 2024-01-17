@@ -1,0 +1,2725 @@
+.bold-word {
+    font-weight: bolder;
+  }
+  
+  .bold-word2 {
+    font-weight: bolder;
+    font-size: 230%;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .offer_container {
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    position: relative;
+  }
+  
+  #offer_title {
+    color: rgb(233, 231, 231);
+    font-family: 'Poppins', sans-serif;
+    font-size: 150%;
+    margin-left: -2%;
+  }
+  
+  #offer_close_btn {
+    background-color: rgb(242, 242, 242);
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .shop_now {
+    margin-top: 0%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+  
+  }
+  
+  .shop_now_images {
+    transition: 1.5s;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 16px;
+  }
+  
+  
+  .slide_image1 {
+    margin-left: 2px;
+    margin-right: -3px;
+  }
+  
+  .shop_now_images img {
+    width: 100vw;
+    height: 73vh;
+    border-radius: 5px;
+  
+  }
+  
+  .shop_now_images::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #shop_now_title {
+    position: absolute;
+    top: 32%;
+    font-size: 200%;
+    margin-left: 16%;
+    color: white;
+  }
+  
+  #summer1 {
+    position: absolute;
+    font-size: 55%;
+    font-weight: bold;
+    margin-left: 43%;
+    color: white;
+  }
+  
+  
+  #shop_now_left_btn {
+    position: absolute;
+    top: 40%;
+    width: 150px;
+    height: 150px;
+    margin-left: 3%;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #shop_now_right_btn {
+    position: absolute;
+    top: 40%;
+    width: 150px;
+    height: 150px;
+    margin-left: 83%;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #shop_now_btn {
+    margin-left: 45%;
+    width: 10%;
+    font-size: 60%;
+    color: black;
+    background-color: white;
+    padding: 3px;
+  }
+  
+  #shop_now_btn:hover {
+    background-color: rgb(221, 217, 217);
+  }
+  
+  .brands {
+    margin-top: 3%;
+    margin-left: 16px;
+  }
+  
+  .brands_img {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  .brands_img img {
+    align-items: center;
+    margin-left: 6px;
+    margin-top: 35px;
+  }
+  
+  .brands_img p {
+    font-size: 4vh;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .customer_experience_title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .customer_experience_title h1 {
+    font-weight: bold;
+    font-size: 270%;
+    margin-top: 5px;
+    margin-left: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .customer_experience_title p {
+    font-size: 150%;
+    margin-top: 27px;
+    margin-right: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .customer_experience h2 {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .customer_experience p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .border-container {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 16px;
+    gap: 18px;
+  }
+  
+  .border {
+    background-color: rgb(235, 239, 244);
+    border-radius: 7px;
+    padding: 10px;
+  }
+  
+  #new_arrivals {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 35px;
+    position: relative;
+  
+  }
+  
+  .nwa {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .nwa button {
+    position: absolute;
+    background-color: #F0F0F0;
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding: 10px;
+    border-radius: 7px;
+    width: 50%;
+    top: 40%;
+    left: 25%;
+    cursor: pointer;
+  }
+  
+  .nwa button:hover {
+    background-color: #b3b0b0;
+  }
+  
+  .nw1 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .nw2 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .nw3 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  
+  }
+  
+  .nw4 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  #most_wanted {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 35px;
+    position: relative;
+  
+  }
+  
+  .mtw {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .mtw button {
+    position: absolute;
+    background-color: red;
+    font-size: 145%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 4px;
+    border-radius: 7px;
+    width: 28%;
+    top: 1%;
+    left: 1%;
+    cursor: text;
+  }
+  
+  .btnh {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btnh button {
+    position: absolute;
+    padding: 1px;
+    border-radius: 10px;
+  }
+  
+  #btnh1 {
+    background-color: transparent;
+    top: 77%;
+    left: 80%;
+    width: 17%;
+    height: 18%;
+    font-size: 230%;
+    padding-top: -2px;
+    cursor: pointer;
+  }
+  
+  #btnh2 {
+    background-color: transparent;
+    top: 77%;
+    left: 80%;
+    width: 17%;
+    height: 18%;
+    font-size: 230%;
+    padding-top: -2px;
+    cursor: pointer;
+  }
+  
+  #btnh3 {
+    background-color: transparent;
+    top: 77%;
+    left: 80%;
+    width: 17%;
+    height: 18%;
+    font-size: 230%;
+    padding-top: -2px;
+    cursor: pointer;
+  }
+  
+  #btnh4 {
+    background-color: transparent;
+    top: 77%;
+    left: 80%;
+    width: 17%;
+    height: 18%;
+    font-size: 230%;
+    padding-top: -2px;
+    cursor: pointer;
+  }
+  
+  #btnh5 {
+    background-color: transparent;
+    top: 77%;
+    left: 80%;
+    width: 17%;
+    height: 18%;
+    font-size: 230%;
+    padding-top: -2px;
+    cursor: pointer;
+  }
+  
+  #btnh6 {
+    background-color: transparent;
+    top: 77%;
+    left: 80%;
+    width: 17%;
+    height: 18%;
+    font-size: 230%;
+    padding-top: -2px;
+    cursor: pointer;
+  }
+  
+  #btnh7 {
+    background-color: transparent;
+    top: 77%;
+    left: 80%;
+    width: 17%;
+    height: 18%;
+    font-size: 230%;
+    padding-top: -2px;
+    cursor: pointer;
+  }
+  
+  #btnh8 {
+    background-color: transparent;
+    top: 77%;
+    left: 80%;
+    width: 17%;
+    height: 18%;
+    font-size: 230%;
+    padding-top: -2px;
+    cursor: pointer;
+  }
+  
+  .mt1 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .mt2 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .mt3 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  
+  }
+  
+  .mt4 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .mt5 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .mt6 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .mt7 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .mt8 {
+    width: 110%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .occasion {
+    margin-left: 25px;
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .colors {
+    margin-left: 25px;
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .arrivals {
+    margin-left: 25px;
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .occasion h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .colors h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .arrivals h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .cli {
+    width: 80%;
+    margin-left: 65px;
+  }
+  
+  .cl1 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cl2 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cl3 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cl4 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cl5 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cl6 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cl7 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cl8 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cl9 {
+    width: 90%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .cli h3 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 190%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .cli p {
+    color: #000000;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .discount_container {
+    background-color: #1D232C;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 30px;
+    padding-right: 60px;
+    margin: 20px;
+  }
+  
+  .discount_container h1 {
+    font-weight: bold;
+    font-size: 350%;
+    font-family: 'Poppins', sans-serif;
+    color: #E2E1E1;
+    margin-top: 90px;
+  }
+  
+  .discount_container p {
+    font-size: 200%;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #E2E1E1;
+  }
+  
+  .discount_container button {
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 5px;
+    width: 150px;
+  }
+  
+  .Newsletter {
+    margin-top: 60px;
+  }
+  
+  .Newsletter h1 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 270%;
+  }
+  
+  .Newsletter p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 180%;
+  }
+  
+  .i_b {
+    border-color: #000000;
+    border-radius: 0;
+    padding: 10px;
+    margin: 20px;
+    background-color: transparent;
+  }
+  
+  .Newsletter button {
+    background-color: #1D232C;
+    color: #E2E1E1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 180%;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  .footer {
+    background-color: #1D232C;
+    margin-top: 60px;
+  }
+  
+  .footer h1 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 270%;
+    color: #E2E1E1;
+  }
+  
+  .footer p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 200%;
+    color: #E2E1E1;
+  }
+  
+  .footer div img {
+    background-color: white;
+    border-radius: 22px;
+    margin-left: 10px;
+  }
+  .Attribution_links {
+    margin-top: 50px;
+    background-color: #f9fdfc;
+    border: solid black 2px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+  }
+  
+  .title_icon {
+    font-size: 24px;
+    font-family: 'Gabarito', sans-serif;
+  }
+  
+  @media screen and (min-width:1025px) and (max-width:1205px) {
+    #offer_title {
+      color: rgb(233, 231, 231);
+      font-family: 'Poppins', sans-serif;
+      font-size: 100%;
+      margin-left: -2%;
+    }
+  
+    #offer_close_btn {
+      background-color: rgb(242, 242, 242);
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .shop_now {
+      margin-top: 0%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+  
+    }
+  
+    .shop_now_images {
+      transition: 2.5s;
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 16px;
+    }
+  
+  
+    .slide_image1 {
+      margin-left: 2px;
+      margin-right: -3px;
+    }
+  
+    .shop_now_images img {
+      width: 170vw;
+      height: 65vh;
+      border-radius: 5px;
+  
+    }
+  
+    .shop_now_images::-webkit-scrollbar {
+      display: none;
+    }
+  
+    #shop_now_title {
+      position: absolute;
+      top: 30%;
+      font-size: 140%;
+      margin-left: 13%;
+      color: white;
+    }
+  
+    #summer1 {
+      position: absolute;
+      font-size: 70%;
+      font-weight: bold;
+      margin-left: 38%;
+      color: white;
+    }
+  
+  
+    #shop_now_left_btn {
+      position: absolute;
+      top: 40%;
+      margin-left: 5%;
+      width: 100px;
+      height: 100px;
+      color: white;
+      cursor: pointer;
+    }
+  
+  
+    #shop_now_right_btn {
+      position: absolute;
+      top: 40%;
+      margin-left: 85%;
+      width: 100px;
+      height: 100px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    #shop_now_btn {
+      margin-left: 38%;
+      width: 20%;
+      font-size: 80%;
+      color: black;
+      background-color: white;
+      padding: 3px;
+    }
+  
+    #shop_now_btn:hover {
+      background-color: rgb(221, 217, 217);
+    }
+    .nwa button {
+      position: absolute;
+      background-color: #F0F0F0;
+      font-size: 60%;
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      padding: 10px;
+      border-radius: 7px;
+      width: 55%;
+      top: 40%;
+      left: 25%;
+      cursor: pointer;
+    }
+  
+    .mtw button {
+      position: absolute;
+      background-color: red;
+      font-size: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      padding: 4px;
+      border-radius: 7px;
+      width: 38%;
+      top: 1%;
+      left: 1%;
+      cursor: text;
+    }
+    .customer_experience_title {
+      display: flex;
+      gap: 50px;
+      margin-top: 55px;
+    }
+  
+    .customer_experience_title h1 {
+      font-weight: bold;
+      font-size: 200%;
+      margin-top: 5px;
+      margin-left: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience_title p {
+      font-size: 150%;
+      margin-top: 27px;
+      margin-right: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience h2 {
+      font-weight: bold;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience p {
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .border-container {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 16px;
+      gap: 14px;
+    }
+  
+    .border {
+      background-color: rgb(235, 239, 244);
+      border-radius: 7px;
+      width: 60%;
+      padding: 10px;
+    }
+  
+    .border-container h2 {
+      font-size: 97%;
+    }
+  
+    .border-container p {
+      font-size: 84%;
+    }
+  
+    .btnh {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .btnh button {
+      position: absolute;
+      padding: -2px;
+      border-radius: 25px;
+    }
+  
+    #btnh1 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh2 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh3 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh4 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh5 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh6 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh7 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh8 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  }
+  
+  
+  @media screen and (min-width:931px) and (max-width:1024px) {
+    #offer_title {
+      color: rgb(233, 231, 231);
+      font-family: 'Poppins', sans-serif;
+      font-size: 100%;
+      margin-left: -2%;
+    }
+  
+    #offer_close_btn {
+      background-color: rgb(242, 242, 242);
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .shop_now {
+      margin-top: 0%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+  
+    }
+  
+    .shop_now_images {
+      transition: 2.5s;
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 16px;
+    }
+  
+  
+    .slide_image1 {
+      margin-left: 2px;
+      margin-right: -3px;
+    }
+  
+    .shop_now_images img {
+      width: 150vw;
+      height: 48vh;
+      border-radius: 5px;
+  
+    }
+  
+    .shop_now_images::-webkit-scrollbar {
+      display: none;
+    }
+  
+    #shop_now_title {
+      position: absolute;
+      top: 25%;
+      font-size: 125%;
+      margin-left: 13%;
+      color: white;
+    }
+  
+    #summer1 {
+      position: absolute;
+      font-size: 70%;
+      font-weight: bold;
+      margin-left: 38%;
+      color: white;
+    }
+  
+  
+    #shop_now_left_btn {
+      position: absolute;
+      top: 38%;
+      margin-left: 5%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+  
+    #shop_now_right_btn {
+      position: absolute;
+      top: 38%;
+      margin-left: 85%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    #shop_now_btn {
+      margin-left: 38%;
+      width: 20%;
+      font-size: 80%;
+      color: black;
+      background-color: white;
+      padding: 3px;
+    }
+  
+    #shop_now_btn:hover {
+      background-color: rgb(221, 217, 217);
+    }
+    .customer_experience_title {
+      display: flex;
+      gap: 50px;
+      margin-top: 55px;
+    }
+  
+    .customer_experience_title h1 {
+      font-weight: bold;
+      font-size: 140%;
+      margin-top: 5px;
+      margin-left: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience_title p {
+      font-size: 100%;
+      margin-top: 27px;
+      margin-right: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience h2 {
+      font-weight: bold;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience p {
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .border-container {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 16px;
+      gap: 14px;
+    }
+  
+    .border {
+      background-color: rgb(235, 239, 244);
+      border-radius: 7px;
+      width: 60%;
+      padding: 10px;
+    }
+  
+    .border-container h2 {
+      font-size: 84%;
+    }
+  
+    .border-container p {
+      font-size: 79%;
+    }
+  
+    .nwa button {
+      position: absolute;
+      background-color: #F0F0F0;
+      font-size: 60%;
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      padding: 10px;
+      border-radius: 7px;
+      width: 55%;
+      top: 40%;
+      left: 25%;
+      cursor: pointer;
+    }
+  
+    .mtw button {
+      position: absolute;
+      background-color: red;
+      font-size: 95%;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      padding: 4px;
+      border-radius: 7px;
+      width: 35%;
+      top: 1%;
+      left: 1%;
+      cursor: text;
+    }
+  
+    .btnh {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .btnh button {
+      position: absolute;
+      padding: -2px;
+      border-radius: 25px;
+    }
+  
+    #btnh1 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh2 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh3 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh4 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh5 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh6 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh7 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh8 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    .cli p {
+      color: #000000;
+      font-size: 65%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli {
+      width: 95%;
+      margin-left: 17px;
+    }
+  }
+  
+  @media screen and (min-width:801px) and (max-width:930px) {
+    #offer_title {
+      color: rgb(233, 231, 231);
+      font-family: 'Poppins', sans-serif;
+      font-size: 100%;
+      margin-left: -2%;
+    }
+  
+    #offer_close_btn {
+      background-color: rgb(242, 242, 242);
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .shop_now {
+      margin-top: 0%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+  
+    }
+  
+    .shop_now_images {
+      transition: 2.5s;
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 16px;
+    }
+  
+  
+    .slide_image1 {
+      margin-left: 2px;
+      margin-right: -3px;
+    }
+  
+    .shop_now_images img {
+      width: 150vw;
+      height: 48vh;
+      border-radius: 5px;
+  
+    }
+  
+    .shop_now_images::-webkit-scrollbar {
+      display: none;
+    }
+  
+    #shop_now_title {
+      position: absolute;
+      top: 25%;
+      font-size: 120%;
+      margin-left: 13%;
+      color: white;
+    }
+  
+    #summer1 {
+      position: absolute;
+      font-size: 70%;
+      font-weight: bold;
+      margin-left: 38%;
+      color: white;
+    }
+  
+  
+    #shop_now_left_btn {
+      position: absolute;
+      top: 38%;
+      margin-left: 5%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+  
+    #shop_now_right_btn {
+      position: absolute;
+      top: 38%;
+      margin-left: 85%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    #shop_now_btn {
+      margin-left: 38%;
+      width: 20%;
+      font-size: 80%;
+      color: black;
+      background-color: white;
+      padding: 3px;
+    }
+  
+    #shop_now_btn:hover {
+      background-color: rgb(221, 217, 217);
+    }
+    .customer_experience_title {
+      display: flex;
+      gap: 50px;
+      margin-top: 55px;
+    }
+  
+    .customer_experience_title h1 {
+      font-weight: bold;
+      font-size: 140%;
+      margin-top: 5px;
+      margin-left: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience_title p {
+      font-size: 100%;
+      margin-top: 27px;
+      margin-right: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience h2 {
+      font-weight: bold;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience p {
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .border-container {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 16px;
+      gap: 14px;
+    }
+  
+    .border {
+      background-color: rgb(235, 239, 244);
+      border-radius: 7px;
+      width: 60%;
+      padding: 10px;
+    }
+  
+    .border-container h2 {
+      font-size: 80%;
+    }
+  
+    .border-container p {
+      font-size: 75%;
+    }
+  
+    .nwa button {
+      position: absolute;
+      background-color: #F0F0F0;
+      font-size: 60%;
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      padding: 10px;
+      border-radius: 7px;
+      width: 53%;
+      top: 40%;
+      left: 25%;
+      cursor: pointer;
+    }
+  
+    .mtw button {
+      position: absolute;
+      background-color: red;
+      font-size: 95%;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      padding: 4px;
+      border-radius: 7px;
+      width: 30%;
+      top: 1%;
+      left: 1%;
+      cursor: text;
+    }
+  
+    .btnh {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .btnh button {
+      position: absolute;
+      padding: -2px;
+      border-radius: 25px;
+    }
+  
+    #btnh1 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh2 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh3 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh4 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh5 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh6 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh7 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh8 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 22%;
+      font-size: 125%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    .cl1 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl2 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl3 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl4 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl5 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl6 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl7 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl8 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl9 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cli h3 {
+      color: #000000;
+      font-weight: bold;
+      font-size: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli p {
+      color: #000000;
+      font-size: 65%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli {
+      width: 90%;
+      margin-left: 10px;
+    }
+  }
+  
+  
+  @media screen and (min-width:601px) and (max-width:800px) {
+    #offer_title {
+      color: rgb(233, 231, 231);
+      font-family: 'Poppins', sans-serif;
+      font-size: 100%;
+      margin-left: -2%;
+    }
+  
+    #offer_close_btn {
+      background-color: rgb(242, 242, 242);
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .shop_now {
+      margin-top: 0%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+  
+    }
+  
+    .shop_now_images {
+      transition: 2.5s;
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 16px;
+    }
+  
+  
+    .slide_image1 {
+      margin-left: 2px;
+      margin-right: -3px;
+    }
+  
+    .shop_now_images img {
+      width: 97vw;
+      height: 38vh;
+      border-radius: 5px;
+  
+    }
+  
+    .shop_now_images::-webkit-scrollbar {
+      display: none;
+    }
+  
+    #shop_now_title {
+      position: absolute;
+      top: 23%;
+      font-size: 90%;
+      margin-left: 18%;
+      color: white;
+    }
+  
+    #summer1 {
+      position: absolute;
+      font-size: 70%;
+      font-weight: bold;
+      margin-left: 38%;
+      color: white;
+    }
+  
+  
+    #shop_now_left_btn {
+      position: absolute;
+      top: 30%;
+      margin-left: 5%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+  
+    #shop_now_right_btn {
+      position: absolute;
+      top: 30%;
+      margin-left: 85%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    #shop_now_btn {
+      margin-left: 38%;
+      width: 20%;
+      font-size: 80%;
+      color: black;
+      background-color: white;
+      padding: 3px;
+    }
+  
+    #shop_now_btn:hover {
+      background-color: rgb(221, 217, 217);
+    }
+  
+    .brands {
+      margin-top: 3%;
+      margin-left: 10px;
+    }
+  
+    .brands_img {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Poppins', sans-serif;
+  
+    }
+  
+    .brands_img img {
+      align-items: center;
+      width: 6vw;
+    }
+  
+    .brands_img p {
+      font-size: 2vw;
+      align-items: center;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    .customer_experience_title {
+      display: flex;
+      gap: 50px;
+      margin-top: 55px;
+    }
+  
+    .customer_experience_title h1 {
+      font-weight: bold;
+      font-size: 130%;
+      margin-top: 5px;
+      margin-left: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience_title p {
+      font-size: 90%;
+      margin-top: 27px;
+      margin-right: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience h2 {
+      font-weight: bold;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience p {
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .border-container {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 16px;
+      gap: 14px;
+    }
+  
+    .border {
+      background-color: rgb(235, 239, 244);
+      border-radius: 7px;
+      width: 60%;
+      padding: 10px;
+    }
+  
+    .border-container h2 {
+      font-size: 75%;
+    }
+  
+    .border-container p {
+      font-size: 70%;
+    }
+  
+    .nwa button {
+      position: absolute;
+      background-color: #F0F0F0;
+      font-size: 70%;
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      padding: 5px;
+      border-radius: 7px;
+      width: 50%;
+      top: 40%;
+      left: 25%;
+      cursor: pointer;
+    }
+  
+    .mtw button {
+      position: absolute;
+      background-color: red;
+      font-size: 95%;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      padding: 4px;
+      border-radius: 7px;
+      width: 20%;
+      top: 1%;
+      left: 1%;
+      cursor: text;
+    }
+  
+    .btnh {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .btnh button {
+      position: absolute;
+      padding: -2px;
+      border-radius: 25px;
+    }
+  
+    #btnh1 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh2 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh3 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh4 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh5 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh6 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh7 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh8 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    .cl1 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl2 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl3 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl4 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl5 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl6 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl7 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl8 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl9 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cli h3 {
+      color: #000000;
+      font-weight: bold;
+      font-size: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli p {
+      color: #000000;
+      font-size: 65%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli {
+      width: 90%;
+      margin-left: 18px;
+    }
+  
+  }
+  
+  @media screen and (min-width:551px) and (max-width:600px) {
+    #offer_title {
+      color: rgb(233, 231, 231);
+      font-family: 'Poppins', sans-serif;
+      font-size: 100%;
+      margin-left: -2%;
+    }
+  
+    #offer_close_btn {
+      background-color: rgb(242, 242, 242);
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .shop_now {
+      margin-top: 0%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+  
+    }
+  
+    .shop_now_images {
+      transition: 2.5s;
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 16px;
+    }
+  
+  
+    .slide_image1 {
+      margin-left: 2px;
+      margin-right: -3px;
+    }
+  
+    .shop_now_images img {
+      width: 97vw;
+      height: 38vh;
+      border-radius: 5px;
+  
+    }
+  
+    .shop_now_images::-webkit-scrollbar {
+      display: none;
+    }
+  
+    #shop_now_title {
+      position: absolute;
+      top: 23%;
+      font-size: 70%;
+      margin-left: 16%;
+      color: white;
+    }
+  
+    #summer1 {
+      position: absolute;
+      font-size: 70%;
+      font-weight: bold;
+      margin-left: 38%;
+      color: white;
+    }
+  
+  
+    #shop_now_left_btn {
+      position: absolute;
+      top: 30%;
+      margin-left: 5%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+  
+    #shop_now_right_btn {
+      position: absolute;
+      top: 30%;
+      margin-left: 85%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    #shop_now_btn {
+      margin-left: 38%;
+      width: 20%;
+      font-size: 80%;
+      color: black;
+      background-color: white;
+      padding: 3px;
+    }
+  
+    #shop_now_btn:hover {
+      background-color: rgb(221, 217, 217);
+    }
+  
+  
+    .brands {
+      margin-top: 3%;
+      margin-left: 16px;
+    }
+  
+    .brands_container {
+      display: flex;
+      margin-top: -10px;
+  
+    }
+  
+    .brands_img {
+      gap: 40px;
+      font-family: 'Poppins', sans-serif;
+  
+    }
+  
+    .brands_img img {
+      align-items: center;
+      width: 6vw;
+    }
+  
+    .brands_img p {
+      font-size: 2vw;
+      align-items: center;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    .customer_experience_title {
+      display: flex;
+      gap: 50px;
+      margin-top: 55px;
+    }
+  
+    .customer_experience_title h1 {
+      font-weight: bold;
+      font-size: 165%;
+      margin-top: 5px;
+      margin-left: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience_title p {
+      font-size: 98%;
+      margin-top: 27px;
+      margin-right: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience h2 {
+      font-weight: bold;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience p {
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .border-container {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 16px;
+      gap: 14px;
+    }
+  
+    .border {
+      background-color: rgb(235, 239, 244);
+      border-radius: 7px;
+      width: 60%;
+      padding: 10px;
+    }
+  
+    .border-container h2 {
+      font-size: 70%;
+    }
+  
+    .border-container p {
+      font-size: 65%;
+    }
+  
+    .nwa button {
+      position: absolute;
+      background-color: #F0F0F0;
+      font-size: 70%;
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      padding: 10px;
+      border-radius: 7px;
+      width: 45%;
+      top: 40%;
+      left: 25%;
+      cursor: pointer;
+    }
+  
+    .mtw button {
+      position: absolute;
+      background-color: red;
+      font-size: 90%;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      padding: 4px;
+      border-radius: 7px;
+      width: 28%;
+      top: 1%;
+      left: 1%;
+      cursor: text;
+    }
+  
+    .btnh {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .btnh button {
+      position: absolute;
+      padding: -2px;
+      border-radius: 25px;
+    }
+  
+    #btnh1 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh2 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh3 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh4 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh5 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh6 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh7 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh8 {
+      background-color: transparent;
+      top: 74%;
+      left: 73%;
+      width: 20.5%;
+      height: 20.8%;
+      font-size: 170%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    .cl1 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl2 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl3 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl4 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl5 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl6 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl7 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl8 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl9 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cli h3 {
+      color: #000000;
+      font-weight: bold;
+      font-size: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli p {
+      color: #000000;
+      font-size: 70%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli {
+      width: 120%;
+      margin-left: 7px;
+    }
+  }
+  
+  @media screen and (min-width:399px) and (max-width:550px) {
+    #offer_title {
+      color: rgb(233, 231, 231);
+      font-family: 'Poppins', sans-serif;
+      font-size: 90%;
+      margin-left: -2%;
+    }
+  
+    #offer_close_btn {
+      background-color: rgb(242, 242, 242);
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+  
+    }
+  
+    .shop_now {
+      margin-top: 0%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+  
+    }
+  
+    .shop_now_images {
+      transition: 2.5s;
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 16px;
+    }
+  
+  
+    .slide_image1 {
+      margin-left: 2px;
+      margin-right: -3px;
+    }
+  
+    .shop_now_images img {
+      width: 97vw;
+      height: 34vh;
+      border-radius: 5px;
+  
+    }
+  
+    .shop_now_images::-webkit-scrollbar {
+      display: none;
+    }
+  
+    #shop_now_title {
+      position: absolute;
+      top: 24%;
+      font-size: 60%;
+      margin-left: 16.8%;
+      color: white;
+    }
+  
+    #summer1 {
+      position: absolute;
+      font-size: 85%;
+      font-weight: bold;
+      margin-left: 36%;
+      color: white;
+    }
+  
+  
+    #shop_now_left_btn {
+      position: absolute;
+      top: 31%;
+      margin-left: 5%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+  
+    #shop_now_right_btn {
+      position: absolute;
+      top: 31%;
+      margin-left: 85%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    #shop_now_btn {
+      margin-left: 38%;
+      width: 20%;
+      font-size: 85%;
+      color: black;
+      background-color: white;
+      padding: 3px;
+    }
+  
+    #shop_now_btn:hover {
+      background-color: rgb(221, 217, 217);
+    }
+  
+    .brands {
+      margin-top: 3%;
+      margin-left: 16px;
+    }
+  
+    .brands_container {
+      display: flex;
+      margin-top: -10px;
+  
+    }
+  
+    .brands_img {
+      gap: 26px;
+      font-family: 'Poppins', sans-serif;
+  
+    }
+  
+    .brands_img img {
+      align-items: center;
+      width: 6vw;
+    }
+  
+    .brands_img p {
+      font-size: 2vw;
+      align-items: center;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience_title {
+      display: flex;
+      gap: 50px;
+      margin-top: 55px;
+    }
+  
+    .customer_experience_title h1 {
+      font-weight: bold;
+      font-size: 130%;
+      margin-top: 5px;
+      margin-left: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience_title p {
+      font-size: 90%;
+      margin-top: 27px;
+      margin-right: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience h2 {
+      font-weight: bold;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .customer_experience p {
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .border-container {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 16px;
+      gap: 14px;
+    }
+  
+    .border {
+      background-color: rgb(235, 239, 244);
+      border-radius: 7px;
+      width: 60%;
+      padding: 10px;
+    }
+  
+    .border-container h2 {
+      font-size: 70%;
+    }
+  
+    .border-container p {
+      font-size: 65%;
+    }
+  
+    .nwa button {
+      position: absolute;
+      background-color: #F0F0F0;
+      font-size: 60%;
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      padding: 5px;
+      border-radius: 7px;
+      width: 45%;
+      top: 40%;
+      left: 25%;
+      cursor: pointer;
+    }
+  
+    .mtw button {
+      position: absolute;
+      background-color: red;
+      font-size: 90%;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      padding: 4px;
+      border-radius: 7px;
+      width: 28%;
+      top: 1%;
+      left: 1%;
+      cursor: text;
+    }
+  
+    .btnh {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .btnh button {
+      position: absolute;
+      padding: -2px;
+      border-radius: 25px;
+    }
+  
+    #btnh1 {
+      background-color: transparent;
+      top: 69%;
+      left: 73%;
+      width: 24.5%;
+      height: 26.8%;
+      font-size: 162%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh2 {
+      background-color: transparent;
+      top: 69%;
+      left: 73%;
+      width: 24.5%;
+      height: 26.8%;
+      font-size: 162%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh3 {
+      background-color: transparent;
+      top: 69%;
+      left: 73%;
+      width: 24.5%;
+      height: 26.8%;
+      font-size: 162%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh4 {
+      background-color: transparent;
+      top: 69%;
+      left: 73%;
+      width: 24.5%;
+      height: 26.8%;
+      font-size: 162%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh5 {
+      background-color: transparent;
+      top: 69%;
+      left: 73%;
+      width: 24.5%;
+      height: 26.8%;
+      font-size: 162%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh6 {
+      background-color: transparent;
+      top: 69%;
+      left: 73%;
+      width: 24.5%;
+      height: 26.8%;
+      font-size: 162%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh7 {
+      background-color: transparent;
+      top: 69%;
+      left: 73%;
+      width: 24.5%;
+      height: 26.8%;
+      font-size: 162%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    #btnh8 {
+      background-color: transparent;
+      top: 69%;
+      left: 73%;
+      width: 24.5%;
+      height: 26.8%;
+      font-size: 162%;
+      padding-top: -5px;
+      cursor: pointer;
+    }
+  
+    .cl1 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl2 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl3 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl4 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl5 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl6 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl7 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl8 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cl9 {
+      width: 95%;
+      height: 80%;
+      border-radius: 5px;
+    }
+  
+    .cli h3 {
+      color: #000000;
+      font-weight: bold;
+      font-size: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli p {
+      color: #000000;
+      font-size: 70%;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .cli {
+      width: 120%;
+      margin-left: 7px;
+    }
+  }

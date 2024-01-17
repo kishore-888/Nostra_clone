@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@800&family=Poppins:wght@800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins&display=swap" rel="stylesheet">
+  <!-- Font awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Tailwind CSS CDN link-->
+  <link href="
+  https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+  " rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="responsive_fonts" id="home">
+  <div class="offer_container">
+    <p id="offer_title">Sign Up and <span class="bold-word" style="font-family: 'Poppins'">GET 20% OFF</span> for your
+      first Order</p>
+    <svg id="offer_close_btn" onclick="toggle()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </svg>
+
+  </div>
+
+
+  <script>
+    // Function to bold specific words in a paragraph
+    function boldWords(offer_title, wordsToBold) {
+      var offer_title = document.getElementById(offer_title);
+      var content = offer_title.innerHTML;
+
+      wordsToBold.forEach(function (word) {
+        var regex = new RegExp("\\b" + word + "\\b", "gi");
+        content = content.replace(regex, '<span class="bold-word">' + word + '</span>');
+      });
+
+      offer_title.innerHTML = content;
+    }
+
+    // Call the function with the offer_title ID and an array of words to bold
+    boldWords('offer_title', ['GET 20% OFF']);
+
+    function toggle() {
+      var offer_container = document.querySelector(".offer_container")
+
+      if (offer_container.style.display === "none") {
+        offer_container.style.display = "block"
+      }
+      else {
+        offer_container.style.display = "none"
+      }
+    }
+  </script>
+
+  <nav class="bg-white p-3 mt-2 ml-2 mr-0 flex items-center justify-between sticky top-0 z-10">
+    <h1 class="text-2xl" style="font-family: 'Poppins', sans-serif; font-weight: bold;">Nostra</h1>
+
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="w-6 h-6 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class="flex gap-20 text-gray-800 hidden md:flex">
+      <li>
+        <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;" href="#home">Home</a>
+      </li>
+
+      <li>
+        <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;" href="#new_arrivals">New
+          Arrival</a>
+      </li>
+
+      <li>
+        <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;" href="#most_wanted">Most
+          Wanted</a>
+      </li>
+
+      <li>
+        <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;"
+          href="collections.html">Collections</a>
+      </li>
+
+      <li>
+        <a class="hover:underline hover:text-black" style="font-family: 'Poppins', sans-serif;"
+          href="contactus.html">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <section id="side_navbar" class="bg-black fixed z-20 top-0 transition-all duration-1000"
+    style="width: 50%; height:100vh; left: -50%;">
+    <div class="text-right p-5">
+      <p id="close_nav" class="inline cursor-pointer text-gray-200">X</p>
+    </div>
+    <ul class="flex flex-col gap-10 items-center text-gray-600">
+      <li>
+        <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+          href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+          href="#new_arrivals">New Arrivals</a>
+      </li>
+
+      <li>
+        <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+          href="#most_wanted">Most
+          Wanted</a>
+      </li>
+
+      <li>
+        <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+          href="collections.html">Collections</a>
+      </li>
+
+      <li>
+        <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
+          href="contactus.html">Contact Us</a>
+      </li>
+    </ul>
+    </nav>
+  </section>
+
+  <section class="shop_now">
+    <div id="shop_now_left_btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+    </div>
+    <div id="shop_now_title">
+      <p><span class="bold-word2" style="font-family: 'Poppins'">Level up your style with
+          our</span></p>
+      <p id="summer1">Summer Collections</p><br>
+      <button id="shop_now_btn">Shop Now<svg style="margin-left: 48%; color: black;" xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+      </button>
+    </div>
+    <div class="shop_now_images">
+      <img class="slide_image1" src="./images/FASHION COLLECTIONS.png">
+      <img class="slide_image2" src="./images/FASHION COLLECTIONS (1).png">
+      <img class="slide_image1" src="./images/FASHION COLLECTIONS.png">
+    </div>
+    <div id="shop_now_right_btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+    </div>
+
+
+  <script>
+    let scrollcontainer = document.querySelector(".shop_now")
+    let left_btn = document.getElementById("shop_now_left_btn")
+    let right_btn = document.getElementById("shop_now_right_btn")
+  
+    scrollcontainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollcontainer.scrrollLeft += evt.deltaY;
+      scrollcontainer.style.scrollBehavior = "smooth";
+    });
+
+    right_btn.addEventListener("click", () => {
+      scrollcontainer.style.scrollBehavior = "smooth";
+      scrollcontainer.scrollLeft += 1530;
+    });
+    left_btn.addEventListener("click", () => {
+      scrollcontainer.style.scrollBehavior = "smooth";
+      scrollcontainer.scrollLeft -= 1530;
+    });
+  
+  
+   
+  </script>
+
+  <script>
+    // Function to bold specific words in a paragraph
+    function boldWords(shop_now_title, wordsToBold) {
+      var shop_now_title = document.getElementById(shop_now_title);
+      var content = shop_now_title.innerHTML;
+
+      wordsToBold.forEach(function (word) {
+        var regex = new RegExp("\\b" + word + "\\b", "gi");
+        content = content.replace(regex, '<span class="bold-word2">' + word + '</span>');
+      });
+
+      shop_now_title.innerHTML = content;
+    }
+  </script>
+
+  </section>
+
+  <section class="brands">
+    <h1 id="brand_title" class="text-2xl" style="font-family: 'Poppins', sans-serif; font-weight: bold;">Brands</h1>
+    <div class="brands_container">
+      <div class="brands_img">
+        <div>
+          <img src="./images/behance.png">
+          <p>Puma</p>
+        </div>
+        <div>
+          <img src="./images/adidas.png">
+          <p>Adidas</p>
+        </div>
+        <div>
+          <img src="./images/letter-s.png">
+          <p>Simple</p>
+        </div>
+        <div>
+          <img src="./images/leaves.png">
+          <p>Leaves</p>
+        </div>
+        <div>
+          <img src="./images/behance.png">
+          <p>Behance</p>
+        </div>
+        <div>
+          <img src="./images/twitch.png">
+          <p>Twitch</p>
+        </div>
+        <div>
+          <img src="./images/leaves.png">
+          <p>Leaves</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="customer_experience">
+    <div class="customer_experience_title">
+      <h1>We Provide Best Customer Experiences</h1>
+      <p>|| We ensure that our customer have the best shopping experience</p>
+    </div>
+
+
+    <div class="border-container">
+      <div class="border">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-12">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+
+
+        <h2>Original products</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus.</p>
+      </div>
+      <div class="border">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-12">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+        </svg>
+
+
+        <h2>Satisfaction Gaurantee</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus.</p>
+      </div>
+      <div class="border">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12">
+          <path fill-rule="evenodd"
+            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+            clip-rule="evenodd" />
+        </svg>
+
+
+        <h2>New Arrival Everyday</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus.</p>
+      </div>
+      <div class="border">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12">
+          <path fill-rule="evenodd"
+            d="M12 5.25c1.213 0 2.415.046 3.605.135a3.256 3.256 0 0 1 3.01 3.01c.044.583.077 1.17.1 1.759L17.03 8.47a.75.75 0 1 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 0 0-1.06-1.06l-1.752 1.751c-.023-.65-.06-1.296-.108-1.939a4.756 4.756 0 0 0-4.392-4.392 49.422 49.422 0 0 0-7.436 0A4.756 4.756 0 0 0 3.89 8.282c-.017.224-.033.447-.046.672a.75.75 0 1 0 1.497.092c.013-.217.028-.434.044-.651a3.256 3.256 0 0 1 3.01-3.01c1.19-.09 2.392-.135 3.605-.135Zm-6.97 6.22a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.752-1.751c.023.65.06 1.296.108 1.939a4.756 4.756 0 0 0 4.392 4.392 49.413 49.413 0 0 0 7.436 0 4.756 4.756 0 0 0 4.392-4.392c.017-.223.032-.447.046-.672a.75.75 0 0 0-1.497-.092c-.013.217-.028.434-.044.651a3.256 3.256 0 0 1-3.01 3.01 47.953 47.953 0 0 1-7.21 0 3.256 3.256 0 0 1-3.01-3.01 47.759 47.759 0 0 1-.1-1.759L6.97 15.53a.75.75 0 0 0 1.06-1.06l-3-3Z"
+            clip-rule="evenodd" />
+        </svg>
+
+
+
+        <h2>Fast & Free Shipping</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="new_arrivals">
+    <h1 id="new_arrivals_title" class="text-2xl" style="font-family: 'Poppins', sans-serif; font-weight: bold;">New
+      Arrivals</h1>
+    <div class="new_arrivals_img grid grid-cols-2  md:grid-cols-4 mt-5 gap-20">
+      <div class="nwa">
+        <img class="nw1" src="./images/a1.jpg">
+        <button id="snb-1">Shop Now<svg style="margin-left: 48%; color: black;" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg></button>
+      </div>
+      <div class="nwa">
+        <img class="nw2" src="./images/a2.jpg">
+        <button id="snb-2">Shop Now<svg style="margin-left: 48%; color: black;" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg></button>
+      </div>
+      <div class="nwa">
+        <img class="nw3" src="./images/a3.jpg">
+        <button id="snb-3">Shop Now<svg style="margin-left: 48%; color: black;" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg></button>
+      </div>
+      <div class="nwa">
+        <img class="nw4" src="./images/a4.jpg">
+        <button id="snb-4">Shop Now<svg style="margin-left: 48%; color: black;" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="most_wanted">
+    <h1 id="most_wanted_title" class="text-2xl" style="font-family: 'Poppins', sans-serif; font-weight: bold;">Most
+      Wanted</h1>
+    <div class="most_wanted_img grid grid-cols-2  md:grid-cols-4 mt-5 gap-20">
+      <div class="mtw">
+        <img class="mt1" src="./images/s1.jpg">
+        <button id="slb-1">sale</button>
+        <button onclick="Toggle1()" id="btnh1"><i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+      </div>
+      <div class="mtw">
+        <img class="mt2" src="./images/s2.jpg">
+        <button id="slb-2">sale</button>
+        <button onclick="Toggle2()" id="btnh2"><i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+      </div>
+      <div class="mtw">
+        <img class="mt3" src="./images/s3.jpg">
+        <button id="slb-3">sale</button>
+        <button onclick="Toggle3()" id="btnh3"><i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+      </div>
+      <div class="mtw">
+        <img class="mt4" src="./images/s4.jpg">
+        <button id="slb-4">sale</button>
+        <button onclick="Toggle4()" id="btnh4"><i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+      </div>
+      <div class="mtw">
+        <img class="mt5" src="./images/s5.jpg">
+        <button id="slb-5">sale</button>
+        <button onclick="Toggle5()" id="btnh5"><i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+      </div>
+      <div class="mtw">
+        <img class="mt6" src="./images/s6.jpg">
+        <button id="slb-6">sale</button>
+        <button onclick="Toggle6()" id="btnh6"><i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+      </div>
+      <div class="mtw">
+        <img class="mt7" src="./images/s7.jpg">
+        <button id="slb-7">sale</button>
+        <button onclick="Toggle7()" id="btnh7"><i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+      </div>
+      <div class="mtw">
+        <img class="mt8" src="./images/s2.jpg">
+        <button id="slb-8">sale</button>
+        <button onclick="Toggle8()" id="btnh8"><i class="fa-regular fa-heart" style="color: #000000;"></i></button>
+      </div>
+    </div>
+
+    <script>
+      var btnh1 = document.getElementById("btnh1");
+      function Toggle1() {
+        if (btnh1.style.backgroundColor == "red") {
+          btnh1.style.backgroundColor = "transparent"
+        }
+        else {
+          btnh1.style.backgroundColor = "red"
+          btnh1.style.borderRadius = "100px"
+        }
+      }
+      var btnh2 = document.getElementById("btnh2");
+      function Toggle2() {
+        if (btnh2.style.backgroundColor == "red") {
+          btnh2.style.backgroundColor = "transparent"
+        }
+        else {
+          btnh2.style.backgroundColor = "red"
+          btnh2.style.borderRadius = "100px"
+        }
+      }
+      var btnh3 = document.getElementById("btnh3");
+      function Toggle3() {
+        if (btnh3.style.backgroundColor == "red") {
+          btnh3.style.backgroundColor = "transparent"
+        }
+        else {
+          btnh3.style.backgroundColor = "red"
+          btnh3.style.borderRadius = "100px"
+        }
+      }
+      var btnh4 = document.getElementById("btnh4");
+      function Toggle4() {
+        if (btnh4.style.backgroundColor == "red") {
+          btnh4.style.backgroundColor = "transparent"
+        }
+        else {
+          btnh4.style.backgroundColor = "red"
+          btnh4.style.borderRadius = "100px"
+        }
+      }
+      var btnh5 = document.getElementById("btnh5");
+      function Toggle5() {
+        if (btnh5.style.backgroundColor == "red") {
+          btnh5.style.backgroundColor = "transparent"
+        }
+        else {
+          btnh5.style.backgroundColor = "red"
+          btnh5.style.borderRadius = "100px"
+        }
+      }
+      var btnh6 = document.getElementById("btnh6");
+      function Toggle6() {
+        if (btnh6.style.backgroundColor == "red") {
+          btnh6.style.backgroundColor = "transparent"
+        }
+        else {
+          btnh6.style.backgroundColor = "red"
+          btnh6.style.borderRadius = "100px"
+        }
+      }
+      var btnh7 = document.getElementById("btnh7");
+      function Toggle7() {
+        if (btnh7.style.backgroundColor == "red") {
+          btnh7.style.backgroundColor = "transparent"
+        }
+        else {
+          btnh7.style.backgroundColor = "red"
+          btnh7.style.borderRadius = "100px"
+        }
+      }
+      var btnh8 = document.getElementById("btnh8");
+      function Toggle8() {
+        if (btnh8.style.backgroundColor == "red") {
+          btnh8.style.backgroundColor = "transparent"
+        }
+        else {
+          btnh8.style.backgroundColor = "red"
+          btnh8.style.borderRadius = "100px"
+        }
+      }
+    </script>
+  </section>
+
+
+  <section class="discount_container md:flex">
+    <div class="md:block p-5">
+      <img src="./images/discount_section.png" alt="discount Image">
+    </div>
+    <div>
+      <h1>Limited Offer</h1>
+      <p>35% OFF on this for the first 30 Customers</p>
+      <div>
+        <button>Shop Now<svg style="margin-left: 48%; color: black;" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg></button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Newsletter text-center">
+    <h1 class="text-center">Join our News Letter</h1>
+    <p>Signup for our email newspaper to get exclusive discounts, updates and more</p>
+    <input type="text" class="i_b border" style="width: 80%;">
+    <br>
+    <button>Subscribe<svg style="margin-left: 40%; color: #E2E1E1;" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg></button>
+  </section>
+  </section>
+
+  <section class="footer p-10 text-left flex flex-col gap-5">
+    <h1>Nostra</h1>
+    <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    <div class="flex gap-10"><img src="./images/instagram.png"><img src="./images/twitter.png"><img
+        src="./images/facebook.png"></div>
+    <p>@ 2023 Nostra.com</p>
+  </section>
+
+  <div class="Attribution_links">
+    <div>
+      <p><a href="https://www.flaticon.com/free-icons/quit" title="quit icons">Quit icons created by Pixel perfect -
+          Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Roundicons -
+          Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Roundicons -
+          Flaticon</a>|</p>
+      <p><a href="https://www.flaticon.com/free-icons/behance-network" title="Behance Network icons">Behance Network
+          icons created by Grow studio - Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/adidas" title="adidas icons">Adidas icons created by Pixel perfect
+          - Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/letter-s" title="Letter s icons">Letter s icons created by Kian
+          Bonanno - Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/nature" title="nature icons">Nature icons created by juicy_fish -
+          Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/twitch" title="twitch icons">Twitch icons created by Enamo Studios
+          - Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by
+          edt.im - Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik
+          - Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Bogdan
+          Rosu - Flaticon</a> |</p>
+      <p><a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Kirill Kazachek
+          - Flaticon</a> |</p>
+    </div>
+    <div>
+      <p class="title_icon">Icons used in this website is from the "Flaticon website" icon
+        "creators"</p>
+      <p><img src="./images/arrow.png"></p>
+
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
