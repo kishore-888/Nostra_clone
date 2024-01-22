@@ -113,97 +113,122 @@
     </nav>
     <section id="side_navbar" class="bg-black fixed z-20 top-0 transition-all duration-1000"
         style="width: 50%; height:100vh; left: -50%;">
-        <div class="text-right p-5">
-            <p id="close_nav" class="inline cursor-pointer text-gray-200">X</p>
-        </div>
-        <ul class="flex flex-col gap-10 items-center text-gray-600">
-            <li>
-                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
-                    href="index.html">Home</a>
-            </li>
+            <div class="text-right p-5 text-xl">
+                <p id="close_nav" class="inline cursor-pointer"><i class="fa-solid fa-square-xmark"
+                        style="color: #d2d6dd;"></i></p>
+            </div>
+            <ul class="flex flex-col gap-10 items-center text-gray-600">
+                <li>
+                    <a class="text-gray-300 hover:underline hover:text-gray-200"
+                        style="font-family: 'Poppins', sans-serif;" href="index.html">Home</a>
+                </li>
 
-            <li>
-                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
-                    href="index.html">New Arrivals</a>
-            </li>
+                <li>
+                    <a class="text-gray-300 hover:underline hover:text-gray-200"
+                        style="font-family: 'Poppins', sans-serif;" href="index.html">New Arrivals</a>
+                </li>
 
-            <li>
-                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
-                    href="index.html">Most
-                    Wanted</a>
-            </li>
+                <li>
+                    <a class="text-gray-300 hover:underline hover:text-gray-200"
+                        style="font-family: 'Poppins', sans-serif;" href="index.html">Most
+                        Wanted</a>
+                </li>
 
-            <li>
-                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
-                    href="collections.html">Collections</a>
-            </li>
+                <li>
+                    <a class="text-gray-300 hover:underline hover:text-gray-200"
+                        style="font-family: 'Poppins', sans-serif;" href="collections.html">Collections</a>
+                </li>
 
-            <li>
-                <a class="text-gray-300 hover:underline hover:text-gray-200" style="font-family: 'Poppins', sans-serif;"
-                    href="contactus.html">Contact Us</a>
-            </li>
-        </ul>
-        </nav>
+                <li>
+                    <a class="text-gray-300 hover:underline hover:text-gray-200"
+                        style="font-family: 'Poppins', sans-serif;" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+            </nav>
     </section>
-    <section class="text-center">
-        <input id="search" type="text" class="border border-black p-2 m-3" style="width: 80%;" placeholder="Search...">
-    </section>
-    <section class="collections p-4 text-center">
-        <section id="collections_container" class="grid grid-cols-3  md:grid-cols-3 mt-5 gap-20">
-            <div id="cl-1" class="cli">
-                <img class="cl1" src="./images/c1.jpg"
-                    alt="image1">
-                <h3>Floral Summer Shirt</h3>
-                <p>₹220</p>
+    <section class="Dress_collections">
+        <section class="text-center vertical-line">
+
+            <div class="image-checkbox">
+                <h1>Occasion</h1>
+                <label><input type="checkbox" class="filter-checkbox" data-category="Occasion" data-filter="Summer">
+                    Summer</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="Occasion" data-filter="Party">
+                    Party</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="Occasion" data-filter="Beach">
+                    Beach</label>
             </div>
-            <div id="cl-2" class="cli">
-                <img class="cl2" src="./images/c2.jpg"
-                    alt="image2">
-                <h3>Summer Green</h3>
-                <p> ₹260</p>
+            <div class="image-checkbox">
+                <h1>Colors</h1>
+                <label><input type="checkbox" class="filter-checkbox" data-category2="Colors" data-filter="Red">
+                    Red</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category3="Colors" data-filter="Bl">
+                    Blue</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category2="Colors" data-filter="W">
+                    White</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category2="Colors" data-filter="G">
+                    Green</label>
             </div>
-            <div id="cl-3" class="cli">
-                <img class="cl3" src="./images/c3.jpg"
-                    alt="image3">
-                <h3>Party Floral Shirt</h3>
-                <p>₹399</p>
+            <div class="image-checkbox">
+                <h1>Arrivals</h1>
+                <label><input type="checkbox" class="filter-checkbox" data-category3="Arrivals" data-filter="Nw">
+                    New</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category3="Arrivals" data-filter="Od">
+                    Old</label>
             </div>
-            <div id="cl-4" class="cli">
-                <img class="cl4" src="./images/c4.jpg"
-                    alt="image4">
-                <h3>Floral Summer Shirt</h3>
-                <p>₹399</p>
-            </div>
-            <div id="cl-5" class="cli">
-                <img class="cl5" src="./images/c5.jpg"
-                    alt="image5">
-                <h3>Beach Shirt</h3>
-                <p>₹579</p>
-            </div>
-            <div id="cl-6" class="cli">
-                <img class="cl6" src="./images/c6.jpg"
-                    alt="image6">
-                <h3>Shirt Party Red</h3>
-                <p>₹579</p>
-            </div>
-            <div id="cl-7" class="cli">
-                <img class="cl7" src="./images/c4.jpg"
-                    alt="image7">
-                <h3>Floral Summer Shirt</h3>
-                <p>₹399</p>
-            </div>
-            <div id="cl-8" class="cli">
-                <img class="cl8" src="./images/c2.jpg"
-                    alt="image8">
-                <h3>Summer Green</h3>
-                <p> ₹260</p>
-            </div>
-            <div id="cl-9" class="cli">
-                <img class="cl9" src="./images/c3.jpg"
-                    alt="image9">
-                <h3>Party Floral Shirt</h3>
-                <p>₹399</p>
-            </div>
+        </section>
+
+
+
+        <section class="collections p-4 text-center">
+            <p><input id="search" type="text" class="border border-black p-5 m-3" placeholder="Search"></p>
+            <section id="collections_container" class="grid grid-cols-3 md:grid-cols-3 mt-5 gap-20">
+                <div id="cl-1" class="cli">
+                    <img class="cl1" src="./images/c1.jpg" alt="image1">
+                    <h3 data-category="Occasion">Floral Summer Shirt (Nw)</h3>
+                    <p>₹220</p>
+                </div>
+                <div id="cl-2" class="cli">
+                    <img class="cl2" src="./images/c2.jpg" alt="image2">
+                    <h3 data-category="Colors">Summer Green (Od-G)</h3>
+                    <p> ₹260</p>
+                </div>
+                <div id="cl-3" class="cli">
+                    <img class="cl3" src="./images/c3.jpg" alt="image3">
+                    <h3 data-category="Arrivals">Party Floral Shirt (Od-G)</h3>
+                    <p>₹399</p>
+                </div>
+                <div id="cl-4" class="cli">
+                    <img class="cl4" src="./images/c4.jpg" alt="image4">
+                    <h3 data-category="Occasion">Floral Summer Shirt (Nw-W)</h3>
+                    <p>₹399</p>
+                </div>
+                <div id="cl-5" class="cli">
+                    <img class="cl5" src="./images/c5.jpg" alt="image5">
+                    <h3 data-category="Colors">Beach Shirt (Nw-Bl)</h3>
+                    <p>₹579</p>
+                </div>
+                <div id="cl-6" class="cli">
+                    <img class="cl6" src="./images/c6.jpg" alt="image6">
+                    <h3 data-category="Arrivals">Shirt Party Red (Nw)</h3>
+                    <p>₹579</p>
+                </div>
+                <div id="cl-7" class="cli">
+                    <img class="cl7" src="./images/c4.jpg" alt="image7">
+                    <h3 data-category="Occasion">Floral Summer Shirt (Nw-W)</h3>
+                    <p>₹399</p>
+                </div>
+                <div id="cl-8" class="cli">
+                    <img class="cl8" src="./images/c2.jpg" alt="image8">
+                    <h3 data-category="Colors">Summer Green (Od-G)</h3>
+                    <p> ₹260</p>
+                </div>
+                <div id="cl-9" class="cli">
+                    <img class="cl9" src="./images/c3.jpg" alt="image9">
+                    <h3 data-category="Arrivals">Party Floral Shirt (Od-G)</h3>
+                    <p>₹399</p>
+                </div>
+            </section>
         </section>
     </section>
 

@@ -35,3 +35,33 @@ search.addEventListener("keyup", function () {
     }
 
     })
+
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+        const images = document.querySelectorAll('.cli');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', filterImages);
+        });
+
+        function filterImages() {
+            let selectedFilters = [];
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    selectedFilters.push({
+                        category: checkbox.dataset.category,
+                        filter: checkbox.dataset.filter
+                    });
+                }
+            });
+
+            images.forEach(img => {
+                const h3 = img.querySelector('h3');
+                const shouldShow = selectedFilters.every(filter => {
+                    return h3.textContent.includes(filter.filter) && h3.dataset.category;
+                });
+
+                img.style.display = shouldShow || selectedFilters.length === 0 ? 'block' : 'none';
+           
+            });
+        }
